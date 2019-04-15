@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block title %}- Running{% endblock %}
+{% block head %}{{super()}}{% endblock %}
+
+
+
+{% block body %}
+<center>
+<h2>Playlist Generated!</h2>
+<a href="https://open.spotify.com/collection/playlists/" target="_blank">View playlist</a>
+<div>
+<a href="http://localhost:5000/runRecentlyAdded">Back to menu</a>
+</div>
+</center>
+{% endblock %}

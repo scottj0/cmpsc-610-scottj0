@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block title %}-Recently Added{% endblock %}
+{% block head %}{{super()}}{% endblock %}
+
+{% block body %}
+<div>
+    <form action="/run" method="POST">
+    Number of songs: <br>
+    <input type="number" name="playlistLength" value="50" min=20>
+    <br><br>
+
+    Max songs per artist: <br>
+    <input type="number" name="maxSongs" value="3" min=1>
+    <br><br>
+
+    <input type="checkbox" name="shuffle" value="True">Shuffle Songs?
+    <br><br>
+
+    <input type="submit" value="Create Playlist!" autofocus>
+    </form>
+</div>
+
+{% endblock %}
